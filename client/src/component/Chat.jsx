@@ -25,7 +25,7 @@ const Longshot = () => {
       setChat(currentChat => [...currentChat, { role: 'user', content: input }]);
       setInput('');
       try {
-        const response = await fetch('http://localhost:8000/api/chat', {
+        const response = await fetch('https://longshot-ai.onrender.com/api/chat', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
